@@ -1,0 +1,5 @@
+<p (click)="mostrarJugadores()">{{equipo}}</p>
+
+<ul *ngIf="isAvailable">
+    <li *ngFor=" let jugador of jugadores">{{jugador.numero}} {{jugador.nombre}} {{jugador.posicion}}</li>    
+</ul>
